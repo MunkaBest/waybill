@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SetFPS : MonoBehaviour
 {
+    [SerializeField] private int _fpsCount;
     void Start()
     {
-        Application.targetFrameRate = 100;
+        Application.targetFrameRate = _fpsCount;
     }
 }

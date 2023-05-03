@@ -156,13 +156,13 @@ Library: lib_burst_generated
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.2D.Common.Runtime.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.2D.IK.Runtime.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.Services.Core.Device.dll
+--root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.2D.Tilemap.Extras.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.Services.Core.Networking.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.Profiling.Core.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
---root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Assembly-CSharp.dll
 --root-assembly=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\Unity.Subsystem.Registration.dll
 --assembly-folder=F:\Unity\GitHub\waybill\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
