@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "808485832152",
+    "project_id": "waybill2-3dde6",
+    "storage_bucket": "waybill2-3dde6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808485832152:android:5de2ad14beef28d19e1ead",
+        "android_client_info": {
+          "package_name": "com.TopBeton.WayBill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808485832152-j08lp7hfd4odbpv1fbqnqh7s289k3v33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJXmPBXuBZ6G9e57vSMGtS3hPb-ptmzis"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808485832152-j08lp7hfd4odbpv1fbqnqh7s289k3v33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
