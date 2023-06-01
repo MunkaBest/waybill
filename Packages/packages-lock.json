@@ -30,6 +30,14 @@
         "com.google.firebase.app": "11.0.0"
       }
     },
+    "com.google.firebase.messaging": {
+      "version": "file:F:/Unity/tgz/com.google.firebase.messaging-11.0.0.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.google.firebase.app": "11.0.0"
+      }
+    },
     "com.google.firebase.storage": {
       "version": "file:F:/Unity/tgz/com.google.firebase.storage-11.0.0.tgz",
       "depth": 0,
@@ -222,8 +230,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mobile.notifications": {
-      "version": "2.1.0",
-      "depth": 1,
+      "version": "2.1.1",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.androidjni": "1.0.0"

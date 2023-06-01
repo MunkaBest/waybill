@@ -5,6 +5,6 @@
   <string name="project_id" translatable="false">waybill2-3dde6</string>
   <string name="google_api_key" translatable="false">AIzaSyAJXmPBXuBZ6G9e57vSMGtS3hPb-ptmzis</string>
   <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAJXmPBXuBZ6G9e57vSMGtS3hPb-ptmzis</string>
-  <string name="google_app_id" translatable="false">1:808485832152:android:5de2ad14beef28d19e1ead</string>
+  <string name="google_app_id" translatable="false">1:808485832152:android:807c5368e40418799e1ead</string>
   <string name="default_web_client_id" translatable="false">808485832152-j08lp7hfd4odbpv1fbqnqh7s289k3v33.apps.googleusercontent.com</string>
 </resources>
