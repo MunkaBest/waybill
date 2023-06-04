@@ -23,8 +23,7 @@ public class StartPoint : MonoBehaviour
             _saveDataPanel.Initialize(_firebaseUnit);
             _carListFromFirebase.GetList(_firebaseUnit);
             _carListUICreator.CreateUIList(_carListFromFirebase);
-            PDF pDF = new PDF();
-            pDF.Create("0001");
+            
         }
         else
         {
