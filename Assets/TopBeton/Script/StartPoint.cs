@@ -12,18 +12,21 @@ public class StartPoint : MonoBehaviour
     [SerializeField] private SaveDataPanel _saveDataPanel;
     [SerializeField] private Login _login;
     [SerializeField] private GameObject ErrorPanel;
+    [SerializeField] private Version _version;
     private void Start()
     {
         if (InternetConnection.Check() != false)
         {
             Debug.Log(_scene);
             _firebaseUnit.Initialize();
+            _version.Initialize(_firebaseUnit);
+            _version.Check();
             _login.Initialize(_firebaseUnit, _scene);
             _currentWaybill.Initialize(_firebaseUnit, _scene);
             _saveDataPanel.Initialize(_firebaseUnit);
             _carListFromFirebase.GetList(_firebaseUnit);
             _carListUICreator.CreateUIList(_carListFromFirebase);
-            
+
         }
         else
         {

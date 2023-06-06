@@ -7,13 +7,10 @@ using iText.Kernel.Font;
 using iText.Layout.Element;
 using iText.Layout.Borders;
 using iText.Layout.Properties;
-using UnityEngine.Networking;
-using System;
 using iText.IO.Font;
 
 public class PDF : MonoBehaviour
 {
-    [SerializeField] private string _path = null;
     [SerializeField] private UnityEngine.UI.Text _date;
     [SerializeField] private UnityEngine.UI.Text _number;
     [SerializeField] private UnityEngine.UI.Text _driver;
@@ -57,16 +54,12 @@ public class PDF : MonoBehaviour
     {
         BetterStreamingAssets.Initialize();
     }
-    public void GenerateFile()
+    public void Create(string path)
     {
-        string name = string.Format("{0}({1})", _number.text, _date.text) + ".pdf";
-        _path = Path.Combine(Application.persistentDataPath, name);
+        if (File.Exists(path))
+            File.Delete(path);
 
-        Debug.Log(_path);
-        if (File.Exists(_path))
-            File.Delete(_path);
-
-        using (FileStream fileStream = new(_path, FileMode.Create, FileAccess.Write))
+        using (FileStream fileStream = new(path, FileMode.Create, FileAccess.Write))
         {
             using (PdfWriter pdfWriter = new PdfWriter(fileStream))
             {
@@ -198,14 +191,5 @@ public class PDF : MonoBehaviour
                 }
             }
         }
-        StartCoroutine(Share());
-    }
-    private IEnumerator Share()
-    {
-        yield return new WaitForEndOfFrame();
-        new NativeShare().AddFile(_path)
-        .SetCallback((result, shareTarget) => Debug.Log("Share result: " + result + ", selected app: " + shareTarget))
-        .Share();
-
     }
 }

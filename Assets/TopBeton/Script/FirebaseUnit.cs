@@ -15,19 +15,6 @@ public class FirebaseUnit : MonoBehaviour, IFirestoreHolder
         _firebaseFirestore.Settings.PersistenceEnabled = false;
         Debug.Log(string.Format("FirebaseFirestore has instanced!"));
         OnLoaded?.Invoke(_firebaseFirestore);
-        /*
-        Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
-        {
-            var dependencyStatus = task.Result;
-            if (dependencyStatus == Firebase.DependencyStatus.Available)
-            {
-                _firebaseFirestore = FirebaseFirestore.DefaultInstance;
-                _firebaseFirestore.Settings.PersistenceEnabled = false;
-                Debug.Log(string.Format("FirebaseFirestore has instanced!"));
-                OnLoaded?.Invoke(_firebaseFirestore);
-            }
-        });
-        */
     }
 
     public FirebaseFirestore GetFirestore()
@@ -40,44 +27,44 @@ public class FirebaseUnit : MonoBehaviour, IFirestoreHolder
         DocumentReference docRef = _firebaseFirestore.Collection("waybills").Document(name);
         Dictionary<string, object> city = new Dictionary<string, object>
         {
-        { "date", "01.01.2023" },
-        { "driver", "—ергеев —ергей —ергеевич" },
-        { "speedMor", "0" },
-        { "speedEv", "0" },
-        { "fuel", "0" },
-        { "shift", "open"},
+        { "date", "" },
+        { "driver", "" },
+        { "speedMor", "" },
+        { "speedEv", "" },
+        { "fuel", "" },
+        { "shift", ""},
 
-        { "dir1", "база" },
-        { "prod1", "песок" },
-        { "am1", "0" },
+        { "dir1", "" },
+        { "prod1", "" },
+        { "am1", "" },
 
-        { "dir2", "база" },
-        { "prod2", "песок" },
-        { "am2", "0" },
+        { "dir2", "" },
+        { "prod2", "" },
+        { "am2", "" },
 
-        { "dir3", "база" },
-        { "prod3", "песок" },
-        { "am3", "0" },
+        { "dir3", "" },
+        { "prod3", "" },
+        { "am3", "" },
 
-        { "dir4", "база" },
-        { "prod4", "песок" },
-        { "am4", "0" },
+        { "dir4", "" },
+        { "prod4", "" },
+        { "am4", "" },
 
-        { "dir5", "база" },
-        { "prod5", "песок" },
-        { "am5", "0" },
+        { "dir5", "" },
+        { "prod5", "" },
+        { "am5", "" },
 
-        { "dir6", "база" },
-        { "prod6", "песок" },
-        { "am6", "0" },
+        { "dir6", "" },
+        { "prod6", "" },
+        { "am6", "" },
 
-        { "dir7", "база" },
-        { "prod7", "песок" },
-        { "am7", "0" },
+        { "dir7", "" },
+        { "prod7", "" },
+        { "am7", "" },
 
-        { "dir8", "база" },
-        { "prod8", "песок" },
-        { "am8", "0" },
+        { "dir8", "" },
+        { "prod8", "" },
+        { "am8", "" },
         };
         docRef.SetAsync(city, SetOptions.MergeAll);
     }

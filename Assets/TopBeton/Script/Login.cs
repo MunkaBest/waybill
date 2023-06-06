@@ -39,6 +39,7 @@ public class Login : MonoBehaviour
                     {
                         if (_password.Equals(password))
                         {
+                            PlayerPrefs.SetString("code", password);
                             _levelManager.Load("AdminScene");
                         }
                     }
@@ -49,6 +50,11 @@ public class Login : MonoBehaviour
                 }
             });
         }
+    }
+
+    public void DeletePassword()
+    {
+        PlayerPrefs.DeleteKey("code");
     }
 
     public void Save()
